@@ -9,4 +9,13 @@ import paymentModel from "./paymentModel";
 
 export default class requestModel {
   MerchantOrderId = "";
+
+  address = new addressModel();
+  cardOnFile = new cardOnFileModel();
+  credentials = new credentialsModel();
+  creditCard = new creditCardModel();
+  customer = new customerModel();
+  deliveryAddress = new deliveryAddressModel();
+  extraDataCollection = new extraDataCollectionModel();
+  payment = new paymentModel();
 }
