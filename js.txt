@@ -1,0 +1,44 @@
+function post(url, body) {}
+console.log("Body=", body);
+let request = new XMLHttpRequest();
+request.open("POST", url, true);
+request.setRequestHeader("Content-type", "application/json");
+request.send(JSON.stringify(body));
+
+request.onload = function () {
+  console.log(this.responseText);
+};
+
+function informaçõesDoCliente() {
+  event.preventDefault();
+  url = "https://apisandbox.braspag.com.br/v2/sales/";
+  let customerName = document.getElementById("customerName").Value;
+  let cardName = document.getElementById("cardName").Value;
+  let cardNumber = document.getElementById("cardNumber").Value;
+  let cardBrand = document.getElementById("cardBrand").Value;
+  let ecpirationDate = document.getElementById("ecpirationDate").Value;
+  let securityCode = document.getElementById("securityCode").Value;
+  let installments = document.getElementById("installments").Value;
+  let amount = document.getElementById("amount").Value;
+  console.log(customerName);
+  console.log(cardName);
+  console.log(cardNumber);
+  console.log(cardBrand);
+  console.log(ecpirationDate);
+  console.log(securityCode);
+  console.log(installments);
+  console.log(amount);
+
+  body = {
+    name: "customerName",
+    cardName: "cardName",
+    cardNumber: "cardNumber",
+    cardBrand: "cardBrand",
+    ecpirationDate: "ecpirationDate",
+    securityCode: "securityCode",
+    installments: "installments",
+    amount: "amount",
+  };
+
+  fazPost(url, body);
+}

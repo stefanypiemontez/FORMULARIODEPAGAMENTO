@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"  
+            rel="stylesheet"   
+        />
+        <title>Formulario Pagador</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h3>Informações do Cliente</h3>
+            </div>
+
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="customerName">Nome do Cliente:</label>
+                    <input type="text" id="customerName" placeholder="Digite o seu nome..."/> 
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="cardName">Nome do portador impresso no cartão:</label>
+                    <input type="text" id="cardName" placeholder="Digite o nome do Portado do cartão..."/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="cardNumber">Numero do Cartão:</label>
+                    <input type="text" id="cardNumber" placeholder="Digite o numero do cartão..."/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="cardBrand">Bandeira do cartão:</label>
+                    <input type="text" id="cardBrand" placeholder="Digite a bandeira do cartão..."/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="ecpirationDate">Data de validade impressa no cartão:</label>
+                    <input type="text" id="ecpirationDate" placeholder="Digite a data de validade do cartão..."/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="securityCode">Código de Segurança do cartão:</label>
+                    <input type="password" id="securityCode" placeholder="Digite o código de segurança do cartão..."/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="installments">Qtd Parcelas:</label>
+                    <input type="text" id="installments" placeholder="Digite o quanto deseja parcelar..."/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="amount">Valor da Transação:</label>
+                    <input type="text" id="amount" placeholder="Digite o valor da Transação..."/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+         
+                <button type="submit">Enviar</button>     
+            </form>
+        <div>
+        <script 
+            src="https://kit.fontawesome.com/9d20062085.js" 
+            crossorigin="anonymous">
+        </script>
+
+        <script src=".\scripts.js"></script>
+    </body>
+</html>
