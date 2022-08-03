@@ -3,6 +3,5 @@ export default class creditCardModel {
   Holder = "";
   ExpirationDate = "";
   SecurityCode = "";
-  SaveCard = "";
-  Alias = "";
+  Brand = "";
 }
