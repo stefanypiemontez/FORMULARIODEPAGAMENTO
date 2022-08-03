@@ -24,6 +24,23 @@ function checkInputs() {
   const installmentsValue = installments.value;
   const amountValue = amount.value;
 
+  console.log(customerNameValue);
+  console.log(cardNumberValue);
+  console.log(cardNameValue);
+  console.log(ecpirationDateValue);
+  console.log(securityCodeValue);
+  console.log(installmentsValue);
+  console.log(amountValue);
+
+  const teste = {
+    MerchantOrderId: "2017051001",
+    customer: {
+      
+    }
+  };
+
+  console.log(teste);
+
   if (customerNameValue === "") {
     setErrorFor(customerName, "É obrigatorio inserir nome do cliente.");
   } else {

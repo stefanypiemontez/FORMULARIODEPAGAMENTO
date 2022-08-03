@@ -11,6 +11,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"  
             rel="stylesheet"   
         />
+
         <title>Formulario Pagador</title>
     </head>
     <body>
@@ -62,7 +63,7 @@
 
                 <div class="form-control">
                     <label for="securityCode">Código de Segurança do cartão:</label>
-                    <input type="password" id="securityCode" placeholder="Digite o código de segurança do cartão..."/>
+                    <input type="text" id="securityCode" placeholder="Digite o código de segurança do cartão..."/>
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="fas fa-check-circle"></i>
                     <small>Mensagem de erro</small>
@@ -77,6 +78,14 @@
                 </div>
 
                 <div class="form-control">
+                    <select name="teste">
+                        <option value="valor1">valor 1</option>
+                        <option value="valor2">valor 2</option>
+                        <option value="valor3">valor 3</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
                     <label for="amount">Valor da Transação:</label>
                     <input type="text" id="amount" placeholder="Digite o valor da Transação..."/>
                     <i class="fas fa-exclamation-circle"></i>
@@ -87,11 +96,12 @@
                 <button type="submit">Enviar</button>     
             </form>
         <div>
-        <script 
+            <script 
             src="https://kit.fontawesome.com/9d20062085.js" 
             crossorigin="anonymous">
         </script>
 
-        <script src=".\scripts.js"></script>
+        <script src=".\main.js"></script>
     </body>
+
 </html>
